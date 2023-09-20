@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/content_main_layout"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/button_default"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/default_snackbar_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/button_call_action"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/button_default"
+        android:layout_centerHorizontal="true"
+        android:text="@string/call_action_snackbar_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/button_custom"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/button_call_action"
+        android:layout_centerHorizontal="true"
+        android:text="@string/custom_snackbar_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+</android.support.constraint.ConstraintLayout>
